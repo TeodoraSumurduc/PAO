@@ -30,7 +30,8 @@ public class Main {
                 "2", "*", "5",
                 "1", "+", "5.0",
                 "1.0", "-", "2",
-                "10.0", "/", "1"};
+                "10.0", "/", "1",
+                "True", "||", "False"};
 
         List<CalculatorResult> calculationResults = SmarterCalculator.calculate(input);
 
