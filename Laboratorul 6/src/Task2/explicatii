@@ -1,0 +1,3 @@
+Am folosit:
+- factory pattern: cand am creat obiectele de tipul Topic si in clasa TopicFactory am o metoda statica getTopic care returneaza un topic existent sau creeaza unul nou daca nu exista
+- observer pattern: clasa Utilizator este observatorul si clsa Topic este subiectul si este responsabila pentru gestinarea abonatiilor si trimiterea notificarilor

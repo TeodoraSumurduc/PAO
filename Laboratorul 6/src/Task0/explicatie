@@ -1,0 +1,25 @@
+Smarter calculator - prototype + strategy
+                   - utilizeaza Strategy Pattern pentru alegerea corecta a tipului de rezultat în functie de 
+                   tipul cererii de calcul (CalculationRequest). Astfel, metoda createCalculatorResponse folosește 
+                   un switch statement pentru a selecta corect tipul de rezultat în functie de tipul cererii de calcul
+                 
+
+CalculationRequest - strategy
+                   - utilizeaza Strategy Pattern pentru a gestiona diferitele tipuri de cereri de calcul și pentru a 
+                   decide cum sa le proceseze. Metoda getRequestType determina tipul de cerere de calcul și returneaza 
+                   un enum corespunzator. Acest enum indica tipul cererii de calcul (integer, double, boolean etc.),
+                   permitand astfel decizia corecta în metoda createCalculatorResponse din clasa SmarterCalculator
+
+requestMapper - factory
+              - reprezinta un exemplu de Factory Pattern. Interfata definește o metoda (tryMapRequest) care este
+              implementata de diferitele fabrici concrete (cum ar fi BooleanCalculatorRequestMapper,
+              IntegerCalculatorRequestMapper, DoubleCalculatorRequestMapper). Fabricile concrete actioneaza ca fabrici
+              pentru a crea obiecte CalculationRequest în functie de tipul operatiei. Astfel, Factory Pattern permite
+              încapsularea logicii de creare a obiectelor și abstractizarea detaliilor de implementare
+
+calculationResult - command
+                  - reprezinta un exemplu de Strategy Pattern. Interfata definește metode comune pentru toate tipurile
+                  de rezultate de calcul. Implementarile concrete ale acestei interfete (cum ar fi
+                  BooleanCalculationResult, IntegerCalculationResult, DoubleCalculationResult) implementeaza aceste
+                  metode pentru a calcula rezultatele corespunzatoare. Astfel, Strategy Pattern permite flexibilitate
+                  în schimbarea și extinderea algoritmilor de calcul

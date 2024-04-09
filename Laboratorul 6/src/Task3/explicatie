@@ -1,0 +1,3 @@
+Am folosit:
+-strategy pattern pentru a alege ce metoda de plata vrea clientul
+-factory Pattern pentru a crea instanțe de tranzacție în funcție de metoda de plată a clientului
