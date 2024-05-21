@@ -1,0 +1,3 @@
+Sequential, Size 10: 13422800 ns
+Sequential, Size 1000: 16252900 ns
+Sequential, Size 10000: 78999200 ns
