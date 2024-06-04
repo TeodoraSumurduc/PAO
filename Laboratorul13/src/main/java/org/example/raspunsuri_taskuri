@@ -1,0 +1,24 @@
+Task 1:
+Output:
+1
+5
+Deoarece variabila "a"este statica, ea apartine clasei A si nu a instantei B, din cauza asta are valoarea 0 in prima faza. Dupa valoarea lui a se incrementeaza si devine 1 si se afiseaza. Se afiseaza dupa 5 pentru ca se afiseaza valoarea variabilei statice "a" din clasa B, care nu a fost modificata.
+
+Task 2:
+Output:
+C
+D 1
+E
+Se ia in ordine inversa. Mai intai apeleaza constructorul lui E, dupa super(1) si intra in constructorul lui D cu parametru, dar cum clasa D mosteneste clasa C apeleaza constructorul lui C fara parametrii si afiseaza "C". Dupa se intoarce la cosntructorul lui D cu parametru si afiseaza "D 1" si dupa revine la constructorul lui E si afiseaza "E".
+
+Task 3:
+Output:
+2
+3
+In functia bar f.a este setat la 2 pentru ca blocul finally se executa intotdeauna, iar foo returneaza 3 tot din acelasi lucru, pentru ca blocul finally se executa intotdeauna.
+
+Task 4:
+Output:
+2
+3
+In functia bar f.a este setat la 2 pentru ca blocul finally se executa intotdeauna, iar foo returneaza 3 tot din acelasi lucru, pentru ca blocul finally se executa intotdeauna.
